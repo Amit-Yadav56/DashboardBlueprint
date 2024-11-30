@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+, "layout/context/layoutcontext.jsx", "layout/context/menucontext.jsx", "layout/AppConfig.jsx", "layout/AppFooter.jsx", "layout/AppMenu.jsx", "layout/AppMenuitem.jsx", "layout/AppSidebar.jsx", "layout/AppTopbar.jsx", "layout/layout.jsx", "demo/components/BlockViewer.jsx", "app/(full-page)/auth/access/page.jsx", "app/(full-page)/auth/error/page.jsx", "app/(full-page)/auth/login/page.jsx", "app/(full-page)/landing/page.jsx", "app/(full-page)/layout.jsx", "app/(main)/blocks/page.jsx", "app/(main)/documentation/page.jsx", "app/(main)/pages/crud/page.jsx", "app/(main)/pages/empty/page.jsx", "app/(main)/pages/timeline/page.jsx", "app/(main)/uikit/charts/page.jsx", "app/(main)/uikit/button/page.jsx", "app/(main)/uikit/file/page.jsx", "app/(main)/uikit/floatlabel/page.jsx", "app/(main)/uikit/formlayout/page.jsx", "app/(main)/uikit/input/page.jsx", "app/(main)/uikit/invalidstate/page.jsx", "app/(main)/uikit/list/page.jsx", "app/(main)/uikit/media/page.jsx", "app/(main)/uikit/message/page.jsx", "app/(main)/uikit/misc/page.jsx", "app/(main)/uikit/overlay/page.jsx", "app/(main)/uikit/panel/page.jsx", "app/(main)/uikit/table/page.jsx", "app/(main)/uikit/tree/page.jsx", "app/(main)/utilities/icons/page.jsx", "app/(main)/layout.jsx", "app/(main)/page.jsx", "app/layout.jsx", "app/(main)/uikit/menu/page.jsx", "app/(main)/uikit/menu/confirmation/page.jsx", "app/(main)/uikit/menu/payment/page.jsx", "app/(main)/uikit/menu/seat/page.jsx", "app/(full-page)/pages/notfound/page.jsx", "demo/service/CountryService.jsx", "demo/service/CustomerService.jsx", "demo/service/EventService.jsx", "demo/service/IconService.jsx", "demo/service/NodeService.jsx", "demo/service/PhotoService.jsx", "demo/service/ProductService.jsx"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
