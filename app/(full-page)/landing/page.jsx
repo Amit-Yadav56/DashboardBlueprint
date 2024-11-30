@@ -13,7 +13,7 @@ import { classNames } from 'primereact/utils';
 const LandingPage = () => {
     const [isHidden, setIsHidden] = useState(false);
     const { layoutConfig } = useContext(LayoutContext);
-    const menuRef = useRef<HTMLElement | null>(null);
+    const menuRef = useRef(null);
 
     const toggleMenuItemClick = () => {
         setIsHidden((prevState) => !prevState);
@@ -27,9 +27,11 @@ const LandingPage = () => {
                         <img src={`/layout/images/${layoutConfig.colorScheme === 'light' ? 'logo-dark' : 'logo-white'}.svg`} alt="Sakai Logo" height="50" className="mr-0 lg:mr-2" />
                         <span className="text-900 font-medium text-2xl line-height-3 mr-8">SAKAI</span>
                     </Link>
-                    <StyleClass nodeRef={menuRef} selector="@next" enterClassName="hidden" leaveToClassName="hidden" hideOnOutsideClick>
-                        <i ref={menuRef} className="pi pi-bars text-4xl cursor-pointer block lg:hidden text-700"></i>
-                    </StyleClass>
+                    {typeof window !== 'undefined' && (
+                        <StyleClass nodeRef={menuRef} selector="@next" enterClassName="hidden" leaveToClassName="hidden" hideOnOutsideClick>
+                            <i ref={menuRef} className="pi pi-bars text-4xl cursor-pointer block lg:hidden text-700"></i>
+                        </StyleClass>
+                    )}
                     <div className={classNames('align-items-center surface-0 flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full left-0 px-6 lg:px-0 z-2', { hidden: isHidden })} style={{ top: '100%' }}>
                         <ul className="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row cursor-pointer">
                             <li>
