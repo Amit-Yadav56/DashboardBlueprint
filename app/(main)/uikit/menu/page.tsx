@@ -14,10 +14,10 @@ import { PanelMenu } from 'primereact/panelmenu';
 import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
 
-const MenuDemo = ({ children }) => {
+const MenuDemo = ({ children }: any) => {
     const [activeIndex, setActiveIndex] = useState(0);
-    const menu = useRef(null);
-    const contextMenu = useRef(null);
+    const menu = useRef<Menu>(null);
+    const contextMenu = useRef<ContextMenu>(null);
     const router = useRouter();
     const pathname = usePathname();
 
@@ -469,11 +469,11 @@ const MenuDemo = ({ children }) => {
         }
     ];
 
-    const toggleMenu = (event) => {
+    const toggleMenu = (event: React.MouseEvent<HTMLButtonElement>) => {
         menu.current?.toggle(event);
     };
 
-    const onContextRightClick = (event) => {
+    const onContextRightClick = (event: React.MouseEvent<HTMLDivElement>) => {
         contextMenu.current?.show(event);
     };
 
