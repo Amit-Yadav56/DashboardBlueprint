@@ -9,8 +9,8 @@ import { Button } from 'primereact/button';
 const MessagesDemo = () => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
-    const toast = useRef<Toast>(null);
-    const message = useRef<Messages>(null);
+    const toast = useRef(null);
+    const message = useRef(null);
 
     const addSuccessMessage = () => {
         message.current?.show({ severity: 'success', content: 'Message Detail' });

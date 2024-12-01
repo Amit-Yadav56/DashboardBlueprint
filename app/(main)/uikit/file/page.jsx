@@ -5,7 +5,7 @@ import { FileUpload } from 'primereact/fileupload';
 import { Toast } from 'primereact/toast';
 
 const FileDemo = () => {
-    const toast = useRef<Toast | null>(null);
+    const toast = useRef(null);
 
     const onUpload = () => {
         toast.current?.show({
@@ -18,7 +18,7 @@ const FileDemo = () => {
 
     return (
         <div className="grid">
-            <Toast ref={toast}></Toast>
+            <Toast ref={(el) => (toast.current = el)}></Toast>
             <div className="col-12">
                 <div className="card">
                     <h5>Advanced</h5>
