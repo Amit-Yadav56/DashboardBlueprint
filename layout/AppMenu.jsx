@@ -12,7 +12,7 @@ const AppMenu = () => {
     const model = [
         {
             label: 'Home',
-            items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' }]
+            items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/dashboard' }]
         },
         {
             label: 'UI Components',
@@ -57,7 +57,7 @@ const AppMenu = () => {
                 {
                     label: 'Landing',
                     icon: 'pi pi-fw pi-globe',
-                    to: '/landing'
+                    to: '/'
                 },
                 {
                     label: 'Auth',

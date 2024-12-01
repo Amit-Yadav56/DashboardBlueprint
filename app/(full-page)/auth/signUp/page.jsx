@@ -32,7 +32,7 @@ const LoginPage = () => {
                         <div className="text-center mb-5">
                             <img src="/demo/images/login/avatar.png" alt="Image" height="50" className="mb-3" />
                             <div className="text-900 text-3xl font-medium mb-3">Welcome, Isabel!</div>
-                            <span className="text-600 font-medium">Sign in to continue</span>
+                            <span className="text-600 font-medium">Sign Up to continue</span>
                         </div>
 
                         <div>
@@ -55,7 +55,7 @@ const LoginPage = () => {
                                     Forgot password?
                                 </a>
                             </div>
-                            <Button label="Sign In" className="w-full p-3 text-xl" onClick={() => router.push('/dashboard')}></Button>
+                            <Button label="Sign Up" className="w-full p-3 text-xl" onClick={() => router.push('/dashboard')}></Button>
                         </div>
                     </div>
                 </div>
